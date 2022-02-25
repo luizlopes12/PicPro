@@ -209,9 +209,6 @@ body {
   line-height: 20px;
 }
 
-.secaoTransacao__boleto {
-}
-
 .secaoTransacao__boleto img {
   width: 100%;
   max-width: 80px;
@@ -239,8 +236,6 @@ body {
   box-sizing: border-box;
 }
 
-.secaoTransacao__cobrar {
-}
 .secaoTransacao__cobrar img {
   width: 100%;
   max-width: 80px;
