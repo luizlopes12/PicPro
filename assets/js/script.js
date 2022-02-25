@@ -18,12 +18,15 @@ function indentificarOpcoes(event){
 
         const id = elemento.id
         
-        const secaoEscolha  = document.querySelector(`div[data-id="${id}"]`)
-
+        const secaoEscolha  = document.querySelector(`div[id="${id}"]`)
+        const divsSecaoEscolha = document.querySelectorAll(`.secaoTransacao__boxOpcao`)
         removeClasseMostrar()
         
         secaoEscolha.classList.add("mostrar")
-        secaoEscolha.children.classList.add('mostrar')
+        //Colocando a classe mostrar também nas divs filhas
+        divsSecaoEscolha.forEach((item)=>{
+            item.parentNode.id == id ? item.classList.add('mostrar') : ''
+        })
     }
 }
 
@@ -33,6 +36,6 @@ function removeClasseMostrar(){
     for(let i = 0; i < divs.length; i++){
 
         divs[i].classList.remove("mostrar")
-        
+
     }
 }
