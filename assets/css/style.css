@@ -1,6 +1,8 @@
 body {
   background-color: #228664;
   font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: auto;
 }
 .container {
   width: 100%;
